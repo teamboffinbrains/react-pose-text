@@ -1,6 +1,6 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('react'), require('react-pose'), require('hey-listen')) :
-    typeof define === 'function' && define.amd ? define(['exports', 'react', 'react-pose', 'hey-listen'], factory) :
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('react'), require('bb-react-pose'), require('hey-listen')) :
+    typeof define === 'function' && define.amd ? define(['exports', 'react', 'bb-react-pose', 'hey-listen'], factory) :
     (factory((global.splitText = {}),global.React,null,null));
 }(this, (function (exports,React,posed,heyListen) { 'use strict';
 

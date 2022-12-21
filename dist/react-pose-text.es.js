@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import posed from 'react-pose';
+import posed from 'bb-react-pose';
 import { invariant } from 'hey-listen';
 
 /*! *****************************************************************************
