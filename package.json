@@ -5,7 +5,15 @@
   "main": "./lib/index.js",
   "module": "./dist/react-pose-text.es.js",
   "types": "./lib/index.d.ts",
-  "repository": "https://www.npmjs.com/package/bb-react-pose-text",
+  "scripts": {
+    "build": "rollup -c && npm run measure",
+    "watch": "rollup -c -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "measure": "gzip -c dist/react-pose-text.js | wc -c",
+    "prettier": "prettier ./src/* --write",
+    "prepublishOnly": "npm run prettier && npm run build"
+  },
+  "repository": "https://github.com/teamboffinbrains/react-pose-text",
   "keywords": [
     "animation",
     "dom",
